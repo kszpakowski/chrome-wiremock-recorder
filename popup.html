@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Wiremock recorder</h1>
+    </div>
+    <div class="main">
+      <button id="record" class="record"></button>
+      <button id="download" class="download">Download</button>
+      <button id="cancel" class="cancel">Cancel</button>
+    </div>
+    <div class="footer">
+      <p id="requestsCounter" class="requestsCounter">0 requests recorded</p>
+    </div>
+
+    <script src="./jszip.min.js"></script>
+    <script src="./FileSaver.min.js"></script>
+    <script src="./popup.js" type="module"></script>
+  </body>
+</html>
