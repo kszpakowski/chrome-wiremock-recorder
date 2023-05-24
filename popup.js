@@ -44,7 +44,6 @@ function save() {
   chrome.storage.local.get().then((result) => {
     Object.values(result).filter(item => item.type === 'request').forEach((req) => {
 
-      console.log('req', req)
       const { method, url, status, body } = req;
 
       const urlPathPattern = urlToPathPattern(url);
